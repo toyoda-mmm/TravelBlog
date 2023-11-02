@@ -1,0 +1,293 @@
+body {
+  color: #333;
+  font-size: 1rem;
+  font-family: "Noto Sans", "Noto Sans JP", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+#header {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  z-index: 10;
+}
+#header .img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#header .site-title {
+  padding: 20px 16px;
+  line-height: 1px;
+}
+#header .site-title a {
+  display: inline-block;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.logo {
+  width: 100%;
+}
+
+#navi {
+  background-color: #333;
+}
+#navi ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #333;
+}
+#navi ul li {
+  font-size: 0.875rem;
+  padding: 10px 60px 10px 0;
+}
+#navi ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#pickup {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 150px;
+  margin-bottom: 60px;
+}
+#pickup .article-title {
+  font-size: 1rem;
+  margin: 10px 0 15px 0;
+}
+
+.readmore {
+  font-size: 0.875rem;
+  text-align: center;
+}
+.readmore a {
+  padding-bottom: 1px;
+  color: #333;
+  position: relative;
+}
+.readmore a::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: #333;
+  transition: all 200ms ease;
+}
+
+#container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+main {
+  width: 65%;
+}
+main .text {
+  padding: 10px 40px 30px 40px;
+}
+main .article-title {
+  font-size: 1.5rem;
+  margin: 10px 0 15px 0;
+}
+main li {
+  font-size: 0.875rem;
+  margin-right: 20px;
+  list-style: none;
+}
+
+.readmore {
+  font-size: 0.875rem;
+  text-align: center;
+}
+.readmore a {
+  padding-bottom: 1px;
+  color: #333;
+  position: relative;
+}
+
+main article {
+  margin-bottom: 80px;
+}
+main article ul {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+#sidebar {
+  width: 33%;
+  padding: 20px;
+}
+#sidebar .site-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.author {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.author .profile {
+  font-size: 0.875rem;
+  text-align: left;
+}
+.author img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.ranking {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.ranking article {
+  margin-bottom: 30px;
+}
+
+img {
+  width: 100%;
+}
+
+.ranking .article-title {
+  font-size: 0.875rem;
+  font-weight: normal;
+  text-align: left;
+}
+
+#sidebar .side-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.archive {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.archive ul {
+  border-bottom: solid 1px #777;
+}
+.archive li {
+  font-size: 0.875rem;
+  border-top: solid 1px #777;
+  padding: 20px;
+  text-align: left;
+  list-style: none;
+}
+
+#footer {
+  font-size: 0.875rem;
+  background-color: #f7f7f7;
+}
+#footer .content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  gap: 10px;
+}
+#footer .item {
+  width: 30%;
+}
+#footer .footer-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+#footer .about-list {
+  margin: 20px 0;
+}
+#footer .arrow {
+  position: relative;
+  display: inline-block;
+  padding-left: 12px;
+  color: #333;
+}
+#footer .arrow::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 0 6px 8px;
+  border-color: transparent transparent transparent #960;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -6px;
+}
+#footer li {
+  margin-bottom: 5px;
+  list-style: none;
+}
+
+.menu-list {
+  border-bottom: solid 1px #777;
+}
+.menu-list li {
+  border-top: solid 1px #777;
+  padding: 15px;
+  text-align: left;
+}
+
+.copyright {
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/*---------------------------------------------*/
+@media screen and (max-width: 767px) {
+  /*-------------------------------------------
+    header
+    -------------------------------------------*/
+  #header .site-title {
+    padding: 20px 16px;
+  }
+  #navi {
+    overflow-x: scroll;
+  }
+  #pickup {
+    flex-direction: column;
+    padding-top: 140px;
+    gap: none;
+  }
+  #pickup article {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #container {
+    flex-direction: column;
+  }
+  main {
+    width: 100%;
+  }
+  #sidebar {
+    width: 100%;
+    padding: 0;
+  }
+  #footer .content {
+    flex-direction: column;
+  }
+  #footer .item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}/*# sourceMappingURL=style.css.map */
